@@ -1,16 +1,8 @@
 # blogclub
 
-A new Flutter project.
+A new Flutter project. Blog Club front end sample.
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/46969763/156151358-efcf48f2-2520-445f-a041-6114c6f3a26d.png" width="350">
+<img src="https://user-images.githubusercontent.com/46969763/156151381-e7931983-bd21-4d81-a6b9-2d3cf0eb5a60.png" width="350">
+<img src="https://user-images.githubusercontent.com/46969763/156151405-c3013e4b-0422-4a7b-93fe-ce866dc0f3b8.png" width="350">
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
