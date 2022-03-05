@@ -1,7 +1,6 @@
 import 'package:blogclub/data.dart';
 import 'package:blogclub/gen/assets.gen.dart';
 import 'package:blogclub/home.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -133,7 +132,7 @@ class ProfileScreen extends StatelessWidget {
                           flex: 1,
                           child: Container(
                             decoration: BoxDecoration(
-                                color: Color(0xff2151cd),
+                                color: const Color(0xff2151cd),
                                 borderRadius: BorderRadius.circular(12)),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,

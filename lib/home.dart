@@ -372,7 +372,7 @@ class Post extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => ArticleScreen())),
+          .push(MaterialPageRoute(builder: (context) => const ArticleScreen())),
       child: Container(
         margin: const EdgeInsets.only(top: 16),
         decoration: BoxDecoration(

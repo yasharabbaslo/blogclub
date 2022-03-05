@@ -1,5 +1,5 @@
 import 'package:blogclub/gen/assets.gen.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:blogclub/main.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -17,12 +17,12 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     final ThemeData themeData = Theme.of(context);
-    final tabTextStyle = TextStyle(
+    const tabTextStyle = TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.bold,
     );
     return Scaffold(
-      backgroundColor: Color(0xffE6EAF1),
+      backgroundColor: const Color(0xffE6EAF1),
       body: SafeArea(
         child: Column(
           children: [
@@ -147,7 +147,13 @@ class _Login extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                    builder: (context) => const MainScreen(),
+                  ),
+                  (route) => false);
+            },
             child: Text('Login'.toUpperCase()),
           ),
         ),
@@ -155,7 +161,7 @@ class _Login extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Forget your password?'),
-            TextButton(onPressed: () {}, child: Text('Reset here'))
+            TextButton(onPressed: () {}, child: const Text('Reset here'))
           ],
         ),
         const SizedBox(
@@ -227,7 +233,13 @@ class _SignUp extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                    builder: (context) => const MainScreen(),
+                  ),
+                  (route) => false);
+            },
             child: Text('Sign Up'.toUpperCase()),
           ),
         ),

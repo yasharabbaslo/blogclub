@@ -4,6 +4,7 @@ import 'package:blogclub/gen/fonts.gen.dart';
 import 'package:blogclub/home.dart';
 import 'package:blogclub/profile.dart';
 import 'package:blogclub/searchscreen.dart';
+import 'package:blogclub/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -86,7 +87,7 @@ class MyApp extends StatelessWidget {
       //     Positioned(left: 0, right: 0, bottom: 0, child: _BottomNavigation())
       //   ],
       // ),
-      home: const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }
@@ -109,10 +110,10 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<int> _history = [];
 
-  GlobalKey<NavigatorState> _homeKey = GlobalKey();
-  GlobalKey<NavigatorState> _articleKey = GlobalKey();
-  GlobalKey<NavigatorState> _searchKey = GlobalKey();
-  GlobalKey<NavigatorState> _menuKey = GlobalKey();
+  final GlobalKey<NavigatorState> _homeKey = GlobalKey();
+  final GlobalKey<NavigatorState> _articleKey = GlobalKey();
+  final GlobalKey<NavigatorState> _searchKey = GlobalKey();
+  final GlobalKey<NavigatorState> _menuKey = GlobalKey();
 
   late final map = {
     homeIndex: _homeKey,
@@ -330,7 +331,7 @@ class _BottomNavigationItem extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   color: isActive
                       ? themeData.colorScheme.primary
-                      : Color(0xff7B8BB2)),
+                      : const Color(0xff7B8BB2)),
             ),
           ],
         ),
